@@ -11,7 +11,7 @@ const ModalTwo = () => {
     <>
       <section className="modal">
         <h1>
-          xorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+          Modal 2 ipsum dolor sit amet consectetur adipisicing elit. Ipsam
           reprehenderit quae aut necessitatibus mollitia asperiores doloribus
         </h1>
         <p>
