@@ -1,0 +1,431 @@
+@import "_fonts";
+@import "_testimonial";
+@import "_modalTwo";
+
+//
+//: : before,
+::after,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #ad6f1d;
+}
+
+/* ---------------- */
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #0c0c0c28;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(32, 32, 32);
+  outline: none;
+}
+
+/* --------------- */
+/* --------------- */
+//
+//
+
+/* --------------- */
+/* --------------- */
+
+/* --------------- */
+/* --------------- */
+/* --------------- */
+/* --------------- */
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+
+  //
+  //
+  .app {
+    //
+  }
+
+  //
+  //
+  //fetching
+
+  // #fetching-container {
+  //   background-color: #0c0c0c;
+  //   width: 100vw;
+
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+
+  //   //
+  //   h1 {
+  //     font-size: calc(20px + 1vmin);
+  //     margin: 150px 0 20px 0;
+  //     padding: 100px 0;
+  //     font-family: "Syncopate-Regular";
+  //     color: rgb(241, 239, 226);
+  //     letter-spacing: 20px;
+  //     font-style: italic;
+  //   }
+  //   .wrapper {
+  //     width: 100%;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     background-color: #000000;
+  //     padding: 30px 0 100px 0;
+  //     //
+  //     //
+  //     .card-container-fetch {
+  //       width: 100%;
+  //       padding: 0.5em 0em 0.5em 0em;
+  //       //   repeat(1, ...stands for the number of columns you want, if you want 2 columns just add the 2
+  //       grid-template-columns: repeat(1, 1fr);
+  //       display: grid;
+  //       grid-gap: 0.3em;
+
+  //       //
+
+  //       .card-item-fetch {
+  //         width: 100%;
+  //         // border: 1px solid red;
+
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         flex-direction: column;
+
+  //         background-color: #1b1b1b;
+  //         // box-shadow: 0 0 50px rgb(252, 248, 209);
+  //         padding: 20px 0;
+
+  //         border-radius: 5rem;
+
+  //         h2 {
+  //           font-size: 0.9rem;
+  //           padding: 10px;
+  //           font-family: "Poppins-Light";
+  //           color: rgb(248, 248, 248);
+  //           text-transform: uppercase;
+  //         }
+
+  //         .link-url {
+  //           color: rgb(248, 248, 248);
+  //           padding: 10px;
+  //           text-decoration: none;
+  //           font-family: "PoppinsThin";
+  //           font-weight: 600;
+  //           &:hover {
+  //             color: rgb(248, 248, 248);
+  //             padding: 10px;
+  //             text-decoration: none;
+  //           }
+  //         }
+  //         //
+  //         // img
+  //         .img-box-fetch {
+  //           position: relative;
+  //           // border-radius: 100%;
+
+  //           border-top-left-radius: 80px 80px;
+  //           border-bottom-right-radius: 80px 80px;
+
+  //           //
+  //           //
+  //           transition: 0.5s all ease-in-out;
+
+  //           &:hover {
+  //             // https://developer.mozilla.org/fr/docs/Web/CSS/border-top-left-radius
+  //             border-top-left-radius: 0;
+  //             border-bottom-right-radius: 0;
+  //             border-top-right-radius: 80px 80px;
+  //             border-bottom-left-radius: 80px 80px;
+  //           }
+  //           //
+  //           overflow: hidden;
+  //           &:after {
+  //             content: "";
+  //             position: absolute;
+  //             top: 0;
+  //             left: 0;
+  //             width: 100%;
+  //             height: 100%;
+
+  //             background-image: linear-gradient(
+  //                 45deg,
+  //                 #c9d339 25%,
+  //                 transparent 25%
+  //               ),
+  //               linear-gradient(-45deg, #beb13b 25%, transparent 25%),
+  //               linear-gradient(45deg, transparent 75%, #beb13b 75%),
+  //               linear-gradient(-45deg, transparent 75%, #beb13b 75%);
+
+  //             background-size: 2px 2px;
+  //             background-position: center;
+  //             opacity: 0.6;
+  //           }
+
+  //           img {
+  //             width: 100%;
+  //             min-height: auto;
+  //             object-fit: cover;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   //---------- media
+  // }
+
+  //
+  //
+  //
+
+  // .modal-content {
+  //   // model open
+  //   z-index: 1;
+  //   background-color: rgb(0, 0, 0);
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex-wrap: wrap;
+  //   flex-direction: row;
+
+  //   position: fixed;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background-color: pink;
+  //   //
+  //   .left-arrow {
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 32px;
+  //     //
+  //     font-size: 3rem;
+  //     color: rgb(255, 255, 255);
+
+  //     cursor: pointer;
+  //     user-select: none;
+  //   }
+  //   .right-arrow {
+  //     position: absolute;
+  //     top: 50%;
+  //     right: 32px;
+  //     //
+  //     font-size: 3rem;
+  //     color: rgb(255, 255, 255);
+
+  //     cursor: pointer;
+  //     user-select: none;
+  //   }
+  //   // box-shadow: 0.5rem 0.5rem rgb(255, 0, 0);
+  //   // background-color: rgb(240, 237, 233);
+
+  //   //
+
+  //   .side-a {
+  //     flex: 1;
+  //     height: 100%;
+  //     background-color: rgb(248, 248, 248);
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     //
+  //     .img-box-fetch {
+  //       position: relative;
+  //       &:after {
+  //         content: "";
+  //         position: absolute;
+  //         top: 0;
+  //         left: 0;
+  //         width: 100%;
+  //         height: 100%;
+
+  //         background-image: linear-gradient(45deg, #c9d339 25%, transparent 25%),
+  //           linear-gradient(-45deg, #beb13b 25%, transparent 25%),
+  //           linear-gradient(45deg, transparent 75%, #beb13b 75%),
+  //           linear-gradient(-45deg, transparent 75%, #beb13b 75%);
+
+  //         background-size: 2px 2px;
+  //         background-position: center;
+  //         opacity: 0.6;
+  //       }
+  //     }
+  //   }
+  //   .side-b {
+  //     height: 100%;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex: 1;
+  //     background-color: rgb(24, 24, 24);
+
+  //     .card-item-fetch {
+  //       text-decoration: none;
+  //       list-style: none;
+
+  //       h2 {
+  //         font-size: 2rem;
+  //         letter-spacing: 5px;
+  //         padding: 10px;
+  //         font-family: "Poppins-Light";
+  //         color: rgb(248, 248, 248);
+  //         text-transform: uppercase;
+  //       }
+  //       .link-url {
+  //         color: rgb(248, 248, 248);
+  //         padding: 10px;
+  //         text-decoration: none;
+  //         font-family: "PoppinsThin";
+  //         font-weight: 600;
+  //         &:hover {
+  //           color: rgb(248, 248, 248);
+  //           padding: 10px;
+  //           text-decoration: none;
+  //         }
+  //       }
+  //     }
+  //   }
+
+  //   //
+  //   //
+  //   .img-box {
+  //     display: block;
+  //     width: 30%;
+  //     position: absolute;
+  //     top: 11%;
+  //     left: 10%;
+  //   }
+
+  //   img {
+  //     width: 100%;
+  //     min-height: auto;
+  //     object-fit: cover;
+  //   }
+
+  //   //
+  //   //
+  //   .btn-card {
+  //     cursor: pointer;
+  //     margin-top: 30px;
+  //     padding: 12px 24px;
+  //     border: 0;
+  //     font-weight: 100;
+  //     font-size: calc(15px + 1vmin);
+  //     text-transform: lowercase;
+  //     font-style: italic;
+  //     letter-spacing: 2px;
+  //     color: rgb(248, 248, 248);
+  //     background-color: transparent;
+  //     //
+  //   }
+
+  //   //
+  //   //
+  //   .btn-close-modal {
+  //     font-size: 2.5rem;
+  //     cursor: pointer;
+  //     //    pointer-events: none; //only add this when you have an issue with overlay
+  //     border: 0;
+  //     font-weight: 100;
+
+  //     color: rgb(240, 240, 240);
+  //     background-color: transparent;
+  //     //
+  //     position: absolute;
+  //     top: 1.3%;
+  //     left: 96%;
+  //   }
+  //   //
+  //   h1 {
+  //     font-family: "RobotoBlack";
+  //     margin: 0 7.5rem;
+  //     position: absolute;
+  //     top: 13%;
+  //     left: 49.5%;
+  //     transform: translate(-10%, -13%);
+  //     color: rgb(248, 248, 248);
+  //   }
+  //   p {
+  //     font-weight: 100;
+  //     font-family: "Poppins-Light";
+  //     width: 30%;
+  //     position: absolute;
+  //     top: 20%;
+  //     left: 43%;
+  //     transform: translate(43%, -20%);
+  //     color: rgb(248, 248, 248);
+  //   }
+  //   h5 {
+  //     font-family: "RobotoBlack";
+  //     margin: 0 7.5rem;
+  //     position: absolute;
+  //     top: 35%;
+  //     left: 40%;
+  //     transform: translate(40%, -35%);
+  //     color: rgb(248, 248, 248);
+  //   }
+  // }
+
+  // //@at-root//@at-root
+  // //
+  // @media screen and (min-width: 768px) {
+  //   #fetching-container {
+  //     width: 100vw;
+  //     display: flex;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  //     background-color: #0c0c0c;
+
+  //     //
+
+  //     //
+
+  //     //
+  //     h1 {
+  //       font-size: calc(50px + 1vmin);
+  //       margin: 150px 0 100px 0;
+  //       padding: 100px 0;
+  //       font-family: "Syncopate-Regular";
+  //       color: rgb(241, 239, 226);
+  //       letter-spacing: 20px;
+  //     }
+
+  //     .wrapper {
+  //       width: 100%;
+  //       display: flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       //
+  //       //
+  //       .card-container-fetch {
+  //         //
+  //         //
+  //         width: 100%;
+  //         padding: 0.5em 0em 0.5em 0em;
+  //         //   repeat(1, ...stands for the number of columns you want, if you want 2 columns just add the 2
+  //         grid-template-columns: repeat(3, 1fr);
+  //         display: grid;
+  //         grid-gap: 0.5em;
+  //         margin: 0 auto;
+  //         //
+  //       }
+  //     }
+  //   }
+  // }
+}
